@@ -66,6 +66,6 @@ COPY ./docker/nginx/sites /etc/nginx/sites-available
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 9001
+EXPOSE 10000
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
