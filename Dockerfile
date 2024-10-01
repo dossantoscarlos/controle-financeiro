@@ -50,6 +50,7 @@ WORKDIR /var/www
 RUN cd /var/www
 # Copiar os arquivos da aplicação para o diretório de trabalho
 COPY . .
+COPY .env .
 
 # Ajustar permissões
 RUN cd /var/www && chmod -R 755 *
