@@ -23,7 +23,7 @@ class AppPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        URL::forceSchema('https');
+        URL::forceScheme('https');
         return $panel
             ->default()
             ->id('app')
